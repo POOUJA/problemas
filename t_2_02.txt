@@ -1,0 +1,129 @@
+Relación de problemas - Tema 2 - Ejercicio 2
+Implementar en C++ las clases correspondientes a las abstracciones definidas en el ejercicio 1
+
+/**
+* -----------------------------------------------------------------------------------------------
+* a) Lápiz
+* -----------------------------------------------------------------------------------------------
+*/
+
+/**
+* @file Lapiz.h
+*/
+class Lapiz {
+ private:
+   // Marca del lápiz
+   std::string marca;
+   
+   // Color del lápiz
+   std::string color;
+   
+   // Longitud en milímetros desde la punta hasta arriba
+   int longitud;
+   
+   // Indica si tiene o no tiene punta.
+   bool punta;
+public:
+   Lapiz();
+  ~Lapiz();
+  void sacarPunta();
+  void escribir( Hoja& hoja, std::string mensaje);
+  bool tienePunta();
+}
+
+/**
+* @file Lapiz.cpp
+*/
+Lapiz::Lapiz():
+  color("")
+   , marca("")
+   , longitud(0)
+   , punta(true){};
+   
+Lapiz::~Lapiz(){};
+
+void Lapiz::sacarPunta() {
+   if( longitud>30 ) {
+    punta=true;
+    longitud-=10;
+};
+void Lapiz::escribir( Hoja& hoja, std::string mensaje) {
+    hoja.recibe( mensaje );
+    longitud-=5;
+    punta=false;
+}
+bool Lapiz::tienePunta() {
+    return punta;
+}
+
+
+
+/**
+* -----------------------------------------------------------------------------------------------
+* b) Libro
+* -----------------------------------------------------------------------------------------------
+*/
+
+/**
+* @file Lapiz.h
+*/
+class Libro() {
+  private:
+    std::string titulo;
+    std::string autor;
+    int anio;
+    std::string editorial;
+    std::string ISBN;
+    bool prestado;
+    std::string usuario;
+    Fecha fecha_prestamo;
+    Fecha fecha_devolucion;
+  public:
+    Libro();
+    Libro ( titulo: cadena ); 
+    ~Libro();  
+    prestar( usuario: cadena; dia: fecha);
+    devolver( dia: fecha );
+    aniosDeAntiguedad();
+}
+
+/**
+* @file Lapiz.cpp
+*/
+Libro::Libro():
+titulo("")
+, autor("")
+, anio(0)
+, editorial("")
+, ISBN("")
+, prestado( false )
+. fecha_prestamo( Fecha() )
+, fecha_devolucion( Fecha() )
+, prestado( false ) {}
+
+Libro::Libro ( std::string titulo ):
+titulo(titulo)
+, autor("")
+, anio(0)
+, editorial("")
+, ISBN("")
+, prestado( false )
+. fecha_prestamo( Fecha() )
+, fecha_devolucion( Fecha() )
+, prestado( false ) {}
+
+Libro::~Libro(){}  
+void Libro::prestar( std::string usuario, Fecha dia) {
+  if( prestado ) return;
+  this->usuario=usuario;
+  this->fecha_prestamo=dia;
+  this->prestado=true;
+}
+void Libro::devolver( Fecha dia ) {
+  if( !prestado) return;
+  this->fecha_devolucion=dia;
+  this->prestado=false;
+}
+int Libro::aniosDeAntiguedad() {
+  return 2015-this->anio;
+}
