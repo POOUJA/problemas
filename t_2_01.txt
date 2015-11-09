@@ -1,0 +1,35 @@
+1. Definir utilizando la notación UML las siguientes abstracciones indicando los atributos y métodos que consideraría necesarios. Hacer las suposiciones que considere oportunas
+
+Lápiz
++----------------------------------------------------+
+|                    Lápiz                           |
++----------------------------------------------------+
+|  - marca: cadena                                   |
+|  - color: cadena                                   |
+|  - longitud: entero                                |
+|  - punta: booleano                                 |
++----------------------------------------------------+
+|  + Lapiz()                                         |
+|  + ~Lapiz()                                        |
+|  + sacarPunta()                                    |
+|  + escribir()                                      |
+|  + tienePunta()                                    |
++----------------------------------------------------+
+
+Libro
++----------------------------------------------------+
+|                    Libro                           |
++----------------------------------------------------+
+|  - titulo: cadena                                  |
+|  - autor: cadena                                   |
+|  - año: entero                                     |
+|  - editorial: cadena                               |
+|  - ISBN: cadena                                    |
++----------------------------------------------------+
+|  + Libro()                                         |
+|  + Libro ( titulo: cadena );                       |
+|  + ~Libro();                                       |
+|  + drestar( usuario: cadena; dia: fecha)           |
+|  + devolver( dia: fecha )                          |
+|  + añosDeAntiguedad()                              |
++----------------------------------------------------+
