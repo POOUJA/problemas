@@ -42,16 +42,21 @@ Lapiz::Lapiz():
    
 Lapiz::~Lapiz(){};
 
+// Cada vez que sacamos punta, el lápiz se acorta
 void Lapiz::sacarPunta() {
-   if( longitud>30 ) {
+   if( longitud>=20 ) {
     punta=true;
     longitud-=10;
 };
+
+
+// Cada vez que escribimos, el lápiz se acorta y pierde su punta
 void Lapiz::escribir( Hoja& hoja, std::string mensaje) {
     hoja.recibe( mensaje );
     longitud-=5;
     punta=false;
 }
+
 bool Lapiz::tienePunta() {
     return punta;
 }
