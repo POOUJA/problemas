@@ -25,6 +25,11 @@ Libro
 |  - año: entero                                     |
 |  - editorial: cadena                               |
 |  - ISBN: cadena                                    |
+|  - fecha_prestamo: fecha                           |
+|  - usuario: cadena                                 |
+|  - prestado: booleano                              |                    
+|  - fecha_devolucion: cadena                        | 
+|  - ISBN: cadena                                    | 
 +----------------------------------------------------+
 |  + Libro()                                         |
 |  + Libro ( titulo: cadena );                       |
