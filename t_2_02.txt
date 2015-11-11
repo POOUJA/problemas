@@ -85,10 +85,10 @@ class Libro() {
     Fecha fecha_devolucion;
   public:
     Libro();
-    Libro ( titulo: cadena ); 
+    Libro ( std::string titulo ); 
     ~Libro();  
-    prestar( usuario: cadena; dia: fecha);
-    devolver( dia: fecha );
+    prestar( std::string usuario, const Fecha& dia);
+    devolver( const Fecha& dia );
     aniosDeAntiguedad();
 }
 
@@ -118,13 +118,13 @@ titulo(titulo)
 , prestado( false ) {}
 
 Libro::~Libro(){}  
-void Libro::prestar( std::string usuario, Fecha dia) {
+void Libro::prestar( std::string usuario, const Fecha& dia) {
   if( prestado ) return;
   this->usuario=usuario;
   this->fecha_prestamo=dia;
   this->prestado=true;
 }
-void Libro::devolver( Fecha dia ) {
+void Libro::devolver( const Fecha& dia ) {
   if( !prestado) return;
   this->fecha_devolucion=dia;
   this->prestado=false;
