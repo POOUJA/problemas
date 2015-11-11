@@ -40,7 +40,13 @@ int main() {
 
 int main() {
   Libro javascript( "Introducción a Javascript" ) ;
-  Libro c__("C++: Data and Structure" );
-  c__.prestar( "Antonio", Fecha( 12,11,2015 ))
-  ;
+  Libro cmm("C++: Data and Structure" );
+  Fecha dia1(12, 11, 2015 );
+  Fecha dia2( 27, 11, 2015 );
+  cmm.prestar( "Antonio", dia1 );
+  cout<<"El libro "<<cmm.getTitulo()<<" tiene "<<cmm.aniosDeAntiguedad()<<" anios "<<endl;
+  if( cmm.getPrestado() ) {
+     cmm<<"El libro " << cmm.getTitulo() << " va a ser devuelto por " << cmm.getUsuario() << endl;
+     cmm.devolver( dia2 );
+  }
 }
