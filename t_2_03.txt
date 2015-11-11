@@ -1,0 +1,46 @@
+3. Implementar un programa de ejemplo en C++ para probar cada una de las clases implementadas en el ejercicio 2.
+/*
+* -----------------------------------------------------------------------------------------------
+* a) Lápiz
+* -----------------------------------------------------------------------------------------------
+* Métodos:
+*   Lapiz();
+*  ~Lapiz();
+*  void sacarPunta();
+*  void escribir( Hoja& hoja, std::string mensaje);
+*  bool tienePunta();
+*/
+
+int main() {
+  Lapiz lapizRojo;
+  Lapiz lapizVerde;
+  Hoja nuevaHoja;
+  while( lapizRojo.tienePunta() && lapizVerde.tienePunta() ) {
+    lapizRojo.escribir( nuevaHoja, "Escribiendo con el lapiz rojo\n" );
+    lapizVerde.escribir( nuevaHoja, "Escribiendo con el lapiz verde\n" );
+    lapizRojo.sacarPunta();
+    lapizVerde.sacarPunta();
+  }
+}
+
+
+/*
+* -----------------------------------------------------------------------------------------------
+* b) Libro
+* -----------------------------------------------------------------------------------------------
+*  Métodos:
+*   Libro();
+*   Libro ( std::string titulo, int anio ); 
+*    ~Libro();  
+*   prestar( std::string usuario, const Fecha& dia);
+*   devolver( const Fecha& dia );
+*   aniosDeAntiguedad();
+*/
+
+
+int main() {
+  Libro javascript( "Introducción a Javascript" ) ;
+  Libro c__("C++: Data and Structure" );
+  c__.prestar( "Antonio", Fecha( 12,11,2015 ))
+  ;
+}
