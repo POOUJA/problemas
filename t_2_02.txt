@@ -70,7 +70,7 @@ bool Lapiz::tienePunta() {
 */
 
 /**
-* @file Lapiz.h
+* @file Libro.h
 */
 class Libro() {
   private:
@@ -93,7 +93,7 @@ class Libro() {
 }
 
 /**
-* @file Lapiz.cpp
+* @file Libro.cpp
 */
 Libro::Libro():
 titulo("")
