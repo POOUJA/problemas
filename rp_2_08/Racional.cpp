@@ -85,7 +85,7 @@ bool Racional::operator==(const Racional& otro) const {
 }
 
 bool Racional::operator<(const Racional& otro) const {
-    return (this!=&otro || (numerador*otro.denominador==denominador*otro.numerador));
+    return  this!=&otro && (numerador*otro.denominador<denominador*otro.numerador);
 }
 
 bool Racional::operator<=( const Racional& otro) const {
