@@ -31,13 +31,12 @@ public:
     Racional operator - (const Racional& otro) const;
     Racional operator * (const Racional& otro) const;
     Racional operator / (const Racional& otro) const;
-    bool operator==(const Racional& otro) const;
-    bool operator<(const Racional& otro) const;
-    bool operator<=( const Racional& otro) const;
-    bool operator>( const Racional& otro) const;
-    bool operator>=( const Racional& otro) const;
-
-    bool operator!=( const Racional& otro) const;
+    inline bool operator==(const Racional& otro) const;
+    inline bool operator<(const Racional& otro) const;
+    inline bool operator<=( const Racional& otro) const;
+    inline bool operator>( const Racional& otro) const;
+    inline bool operator>=( const Racional& otro) const;
+    inline bool operator!=( const Racional& otro) const;
 
 private:
     int numerador;
@@ -45,5 +44,27 @@ private:
 
 };
 
+
+bool Racional::operator==(const Racional& otro) const {
+    return (this==&otro || (numerador*otro.denominador==denominador*otro.numerador));
+}
+
+bool Racional::operator<(const Racional& otro) const {
+    return  this!=&otro && (numerador*otro.denominador<denominador*otro.numerador);
+}
+
+bool Racional::operator<=( const Racional& otro) const {
+    return operator<(otro) || operator==(otro);
+}
+bool Racional::operator>( const Racional& otro) const {
+    return !(operator<=(otro));
+}
+bool Racional::operator>=( const Racional& otro) const {
+    return operator>(otro)||operator==(otro);
+}
+
+bool Racional::operator!=( const Racional& otro) const {
+    return !(operator==(otro));
+}
 #endif	/* RACIONAL_H */
 

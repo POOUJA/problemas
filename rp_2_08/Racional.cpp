@@ -80,27 +80,7 @@ Racional Racional::operator/( const Racional& otro ) const{
     return this->dividir(otro);
 }
 
-bool Racional::operator==(const Racional& otro) const {
-    return (this==&otro || (numerador*otro.denominador==denominador*otro.numerador));
-}
 
-bool Racional::operator<(const Racional& otro) const {
-    return  this!=&otro && (numerador*otro.denominador<denominador*otro.numerador);
-}
-
-bool Racional::operator<=( const Racional& otro) const {
-    return operator<(otro) || operator==(otro);
-}
-bool Racional::operator>( const Racional& otro) const {
-    return !(operator<=(otro));
-}
-bool Racional::operator>=( const Racional& otro) const {
-    return operator>(otro)||operator==(otro);
-}
-
-bool Racional::operator!=( const Racional& otro) const {
-    return !(operator==(otro));
-}
 
 
 
