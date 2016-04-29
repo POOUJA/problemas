@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=rp_2_09_dados
+PROJECTNAME=Gestoria
 
 # Active Configuration
 DEFAULTCONF=Debug

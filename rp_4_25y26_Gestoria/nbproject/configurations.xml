@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Empleado.h</itemPath>
+      <itemPath>EmpleadoComision.h</itemPath>
+      <itemPath>EmpleadoHoras.h</itemPath>
+      <itemPath>EmpleadoNoExiste.h</itemPath>
+      <itemPath>EmpleadoSFijo.h</itemPath>
+      <itemPath>Empresa.h</itemPath>
+      <itemPath>EmpresaNoExiste.h</itemPath>
+      <itemPath>Gestoria.h</itemPath>
+      <itemPath>ItemDuplicable.h</itemPath>
+      <itemPath>ItemIdentificable.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Empleado.cpp</itemPath>
+      <itemPath>EmpleadoComision.cpp</itemPath>
+      <itemPath>EmpleadoHoras.cpp</itemPath>
+      <itemPath>EmpleadoNoExiste.cpp</itemPath>
+      <itemPath>EmpleadoSFijo.cpp</itemPath>
+      <itemPath>Empresa.cpp</itemPath>
+      <itemPath>EmpresaNoExiste.cpp</itemPath>
+      <itemPath>Gestoria.cpp</itemPath>
+      <itemPath>ItemDuplicable.cpp</itemPath>
+      <itemPath>ItemNombre.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="Empleado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Empleado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoComision.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoComision.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoHoras.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoHoras.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoNoExiste.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoNoExiste.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoSFijo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoSFijo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Empresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Empresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpresaNoExiste.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpresaNoExiste.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Gestoria.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Gestoria.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ItemDuplicable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ItemDuplicable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ItemIdentificable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ItemNombre.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Empleado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Empleado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoComision.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoComision.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoHoras.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoHoras.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoNoExiste.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoNoExiste.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpleadoSFijo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpleadoSFijo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Empresa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Empresa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EmpresaNoExiste.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EmpresaNoExiste.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Gestoria.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Gestoria.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ItemDuplicable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ItemDuplicable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ItemIdentificable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ItemNombre.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
