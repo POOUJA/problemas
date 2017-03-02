@@ -67,7 +67,7 @@ int MarcaDeTiempo::Compara(const MarcaDeTiempo &y){
     if((h==y.h) && (m==y.m) && (s==y.s)){
         return 0;
     }
-    if((h>=y.h) && (m>=y.m) && (s>y.s)){
+    if((h*3600+m*60+s)>(y.h*3600+y.m*60+y.s)){
         return 1;
     } else return -1;
 }
